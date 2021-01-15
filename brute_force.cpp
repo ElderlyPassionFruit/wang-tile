@@ -378,8 +378,8 @@ void answerForQueries() {
                 cout << "fail: there aren't relevant sets for your's query" << endl;
             } else {
                 cout << "sample set" << endl;
-                for (auto tile : sampleTilingSet[h][w]) {
-                    for (auto side : tile) {
+                for (const auto& tile : sampleTilingSet[h][w]) {
+                    for (const auto& side : tile) {
                         cout << side << " ";
                     }
                     cout << endl;
@@ -400,8 +400,8 @@ void answerForQueries() {
                 cout << "fail: there aren't relevant sets for your's query" << endl;
             } else {
                 cout << "sample set" << endl;
-                for (auto tile : sampleNonTilingSet[h][w]) {
-                    for (auto side : tile) {
+                for (const auto& tile : sampleNonTilingSet[h][w]) {
+                    for (const auto& side : tile) {
                         cout << side << " ";
                     }
                     cout << endl;
